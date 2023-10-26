@@ -7,6 +7,8 @@ import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import  Contact  from "./Contact";
+
 
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -58,16 +60,19 @@ const Pricing = () => {
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
-                    Unlimited Bandwitch
+                    User Registration
                   </li>
                   <li className="relative check custom-list my-2">
-                    Encrypted Connection
+                  Course Management
                   </li>
                   <li className="relative check custom-list my-2">
-                    No Traffic Logs
+                  Basic Communication
                   </li>
                   <li className="relative check custom-list my-2">
-                    Works on All Devices
+                  Basic Reporting
+                  </li>
+                  <li className="relative check custom-list my-2">
+                  User Support
                   </li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
@@ -102,24 +107,27 @@ const Pricing = () => {
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                 <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
+                Enrollment Management
                 </li>
                 <li className="relative check custom-list my-2">
-                  Encrypted Connection
+                Enhanced Communication
                 </li>
                 <li className="relative check custom-list my-2">
-                  No Traffic Logs
+                Gradebook
                 </li>
                 <li className="relative check custom-list my-2">
-                  Works on All Devices
+                Customization
                 </li>
                 <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
+                Resource Library
+                </li>
+                <li className="relative check custom-list my-2">
+                Support
                 </li>
               </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                 <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $9 <span className="text-black-500">/ mo</span>
+                  $100 <span className="text-black-500">/ st</span>
                 </p>
                 <ButtonOutline>Select</ButtonOutline>
               </div>
@@ -149,16 +157,16 @@ const Pricing = () => {
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                 <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
+                Advanced Analytics
                 </li>
                 <li className="relative check custom-list my-2">
-                  Encrypted Connection
+                Custom Integration
                 </li>
                 <li className="relative check custom-list my-2">
-                  No Traffic Logs
+                Mobile App
                 </li>
                 <li className="relative check custom-list my-2">
-                  Works on All Devices
+                Advanced Support: 24/7
                 </li>
                 <li className="relative check custom-list my-2">
                   Connect Anyware{" "}
@@ -169,7 +177,7 @@ const Pricing = () => {
               </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                 <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $12 <span className="text-black-500">/ mo</span>
+                  $200 <span className="text-black-500">/ st</span>
                 </p>
 
                 <ButtonOutline>Select</ButtonOutline>
@@ -179,52 +187,14 @@ const Pricing = () => {
           </div>
         </div>
         <div className="flex flex-col w-full my-16">
+          
           <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
-              Huge Global Network of Fast VPN{" "}
-            </motion.h3>
-            <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
-              See LaslesVPN everywhere to make it easier for you when you move
-              locations.
-            </motion.p>
+            {/* <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}> 
+              
+            </motion.div> */}
+            <Contact />
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper>
-            <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}> 
-              <Maps className="w-full h-auto" />
-            </motion.div>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper>
-            <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
-              {/* <Netflix className="h-18 w-auto" /> */}
-              <img
-                src="/assets/Icon/amazon.png"
-                className="h-14 w-auto mt-4 lg:mt-2"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/netflix.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/reddit.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/discord.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/spotify.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-            </motion.div>
-          </ScrollAnimationWrapper>
+        
         </div>
         <div className="flex flex-col w-full my-16" id="testimoni">
           <ScrollAnimationWrapper>

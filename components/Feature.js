@@ -5,10 +5,11 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits."
+  "Course and Curriculum Management.",
+  "Student Information Management.",
+  "Communication and Collaboration Tools",
+  "Assessment and Grading.",
+  "Analytics and Reporting."
 ]
 
 const Feature = () => {
